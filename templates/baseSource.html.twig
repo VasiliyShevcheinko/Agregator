@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block body %}
+    <a href="{{ path('sources') }}">Источники</a>
+    <div class="wrapper">
+        <div class="wrapper">
+            {% block source %}{% endblock %}
+        </div>
+{#        Pagination#}
+        <ul class="pagination">
+            {% for number in 1..pageNumbers %}
+                {% if number==paginationPage %}
+                    <a class="select" href={{ path(src,{'page':number}) }}>{{ number }}</a>
+                {% else %}
+                    <a href={{ path(src,{'page':number}) }}>{{ number }}</a>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

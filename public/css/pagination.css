@@ -1,0 +1,12 @@
+.pagination a
+{
+    font-size: 17px;
+    margin: 3px;
+    text-decoration: none;
+}
+
+.pagination a.select
+{
+    font-size: 19px;
+    text-decoration:underline;
+}

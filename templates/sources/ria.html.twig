@@ -1,0 +1,10 @@
+{% extends 'baseSource.html.twig' %}
+
+{% block source %}
+    <h1>Ria.ru Новости</h1>
+    <ul>
+        {% for item in pageData %}
+            <li><a href="{{ item['href'] }}" target="_blank">{{ item['title'] }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
