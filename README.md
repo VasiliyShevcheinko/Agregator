@@ -5,7 +5,7 @@
 <p>1. Clone the Project from GitHub.ru using the command: <code>git clone https://github.com/VasiliyShevcheinko/Agregator.git</code> or download by link: https://github.com/VasiliyShevcheinko/Agregator</p>
 <p>2. Installs the project dependencies using the command: <code>composer install</code> inside project directory.</p>
 <p>3. Your server should look into the directory public where the file index.php is located.</p>
-<p>4. If Apache server is used, must be enabled mod_rewrite and the options: <samp>Options Indexes FollowSymLinks</samp>, "AllowOverride All" for the directory with the project must be set in /etc/apache2/apache2.conf</p>
+<p>4. If Apache server is used, must be enabled mod_rewrite and the options: <samp>Options Indexes FollowSymLinks</samp>, <samp>AllowOverride All</samp> for the directory with the project must be set in /etc/apache2/apache2.conf</p>
 
 <h2>Service extension</h2>
 
